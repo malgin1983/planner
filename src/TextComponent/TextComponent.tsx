@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { View, Text, TouchableHighlight, StyleSheet } from 'react-native';
 import { useSelector } from 'react-redux';
 import { RootState, useAppDispatch } from '../redux/Store';
@@ -10,13 +10,11 @@ interface ITextComponent {
 }
 
 const TextComponent: React.FC<ITextComponent> = (props) => {
-    useEffect(() => {
-        dispatch(fetchUserById(1));
-    }, []);
+    const dispatch = useAppDispatch();
+    dispatch(fetchUserById(1));
     const count = useSelector((state: RootState) => state.counter.count);
     const fetchData = useSelector((state: RootState) => state.counter.data);
     console.log('Data from fetch', fetchData);
-    const dispatch = useAppDispatch();
     const pressPluse = () => {
         dispatch(increment());
     };
