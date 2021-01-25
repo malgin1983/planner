@@ -25,16 +25,16 @@ const TextComponent: React.FC<ITextComponent> = (props) => {
     return (
         <View style={styles.container}>
             <View style={styles.textContainer}>
-                <Text testID={'text-component'}>{props.text}</Text>
+                <Text testID={'text-component -props'}>{props.text}</Text>
             </View>
             <View style={styles.textContainer}>
                 <Text testID={'text-component'}>{`Count - ${count}`}</Text>
             </View>
             <View style={styles.btnBlock}>
-                <TouchableHighlight testID={'text-btn'} style={styles.btn} onPress={pressMinus}>
+                <TouchableHighlight testID={'text-btn-minus'} style={styles.btn} onPress={pressMinus}>
                     <Text>{'minus'}</Text>
                 </TouchableHighlight>
-                <TouchableHighlight testID={'text-btn'} style={styles.btn} onPress={pressPluse}>
+                <TouchableHighlight testID={'text-btn-plus'} style={styles.btn} onPress={pressPluse}>
                     <Text>{'plus'}</Text>
                 </TouchableHighlight>
             </View>
