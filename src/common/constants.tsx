@@ -29,7 +29,6 @@ export const MONTHS_FULL = {
 };
 
 export const YEAR_LIST = {
-    2020: '2020',
     2021: '2021',
     2022: '2022',
     2023: '2023',
@@ -102,26 +101,21 @@ export const MONTH_MOCK_DATA = [
 export const YEAR_MOCK_DATA = [
     {
         id: 1,
-        label: '2020',
-        value: '2020',
-    },
-    {
-        id: 2,
         label: '2021',
         value: '2021',
     },
     {
-        id: 3,
+        id: 2,
         label: '2022',
         value: '2022',
     },
     {
-        id: 4,
+        id: 3,
         label: '2023',
         value: '2023',
     },
     {
-        id: 5,
+        id: 4,
         label: '2024',
         value: '2024',
     },
